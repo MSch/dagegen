@@ -1,8 +1,8 @@
-#!/bin/env ruby
+#!/usr/bin/env ruby
 
 require 'rubygems'
-require 'nokogiri'
-require 'mechanize'
+require 'bundler/setup'
+Bundler.require(:default)
 
 class Dagegen
   attr_accessor :username, :password, :url, :current_page, :mechanize
